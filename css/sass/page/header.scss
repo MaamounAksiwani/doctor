@@ -1,0 +1,57 @@
+.header {
+    height: 100vh;
+    .d-block {
+        height: 800px;
+    }
+    .carousel-item {
+        background-size: cover;
+    }
+    .carousel-one {
+        background-image: url('../img/img1.jpeg');
+    }
+    .carousel-two {
+        background-image: url('../img/pexels-photo-48604.jpeg');
+    }
+    .carousel-there {
+        background-image: url('../img/pexels-photo-4167539.jpeg');
+    }
+    .carousel-inner {
+        .text-header {
+            position: absolute;
+            z-index: 3;
+            text-align: right;
+            right: 200px;
+            top: 200px;
+            h1 {
+                color: $main-Color;
+                font-size: 80px;
+            }
+            h3 {
+                font-size: 40px;
+                color: #FFF;
+            }
+            button {
+                background: none;
+                padding: 10px 15px;
+                border: 1px solid $main-Color;
+                border-radius: 2px;
+                color: #FFF;
+                transition: all 0.5s ease;
+                &:hover {
+                    background-color: $main-Color;
+                    color: #000;
+                }
+            }
+        }
+        .overlay {
+            @include Overlay();
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+    }
+    .carousel-indicators {
+        li {
+            height: 6px;
+        }
+    }
+}
